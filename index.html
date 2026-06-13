@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="启知云课堂为教育机构和企业培训团队提供直播授课、录播课程、学习督导与数据分析一体化解决方案。" />
+    <link rel="icon" type="image/svg+xml" href="/qizhi-cloud-website/favicon.svg" />
+    <title>启知云课堂 - 在线培训机构</title>
+    <!-- 防暗色模式首屏闪烁内联脚本 -->
+    <script>
+      (function() {
+        try {
+          const savedDark = localStorage.getItem('ui-dark-mode');
+          const isDark = savedDark !== null ? savedDark === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/qizhi-cloud-website/assets/index-DA63kne6.js"></script>
+    <link rel="stylesheet" crossorigin href="/qizhi-cloud-website/assets/index-Bhu4Q-_u.css">
+  </head>
+  <body class="bg-background text-foreground transition-colors duration-300">
+    <div id="app"></div>
+  </body>
+</html>
