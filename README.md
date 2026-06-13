@@ -3,6 +3,10 @@
 本项目是一个基于 **Vue 3 + TypeScript + Vite + Tailwind CSS**
 构建的高美感、模块化在线培训机构落地页。页面具备丰富的设计美学与出色的微交互，旨在为在线教育和培训机构提供现代化、高转化的精美页面模板。
 
+## 效果图
+
+<img src="./ScreenShot.avif" alt="效果图" style="zoom: 70%;" />
+
 ## 🌟 核心特性
 
 - 🧱
