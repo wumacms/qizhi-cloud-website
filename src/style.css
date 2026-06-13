@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--theme-font-sans, sans-serif);
+}
+
+@theme {
+  /* Brand mappings matching the demo UI classes */
+  --color-brand: var(--theme-primary);
+  --color-brand-hover: color-mix(in oklab, var(--theme-primary) 85%, black);
+  --color-brand-light: var(--theme-muted);
+  --color-brand-light-strong: var(--theme-accent);
+  --color-brand-border: var(--theme-border);
+  --color-brand-border-dark: var(--theme-border);
+  --color-brand-dark: var(--theme-muted);
+  --color-brand-light-text: var(--theme-primary);
+  --color-brand-light-text-hover: color-mix(in oklab, var(--theme-primary) 85%, black);
+  --color-brand-foreground: var(--theme-primary-foreground);
+
+  /* Generic UI components map for shadcn-style background and card variables */
+  --color-background: var(--theme-background);
+  --color-foreground: var(--theme-foreground);
+  --color-card: var(--theme-card);
+  --color-card-foreground: var(--theme-card-foreground);
+  --color-border: var(--theme-border);
+  --color-input: var(--theme-input);
+  --color-ring: var(--theme-ring);
+
+  /* Radius mapping for dynamic roundness */
+  --radius-lg: var(--theme-radius);
+  --radius-md: calc(var(--theme-radius) - 2px);
+  --radius-sm: calc(var(--theme-radius) - 4px);
+
+  /* Font mappings for theme-specific typography */
+  --font-sans: var(--theme-font-sans);
+  --font-serif: var(--theme-font-serif);
+  --font-mono: var(--theme-font-mono);
+
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 自定义覆盖：Neo Brutalism 主题的品牌前景色应始终为黑色，以确保可读性及新粗野主义设计风格的统一 */
+html[data-theme="neo_brutalism"] {
+  --theme-primary-foreground: oklch(0 0 0) !important;
+}
+
+/* 自定义覆盖：针对特定主题在亮色模式下主色调过浅的问题，强制使用深色文字前景色以修复对比度缺陷 */
+html[data-theme="ocean_breeze"]:not(.dark) {
+  --theme-primary-foreground: oklch(0.21 0.03 260) !important; /* 深蓝/青色 */
+}
+html[data-theme="pastel_dreams"]:not(.dark) {
+  --theme-primary-foreground: oklch(0.21 0.03 260) !important; /* 深紫色 */
+}
+html[data-theme="northern_lights"]:not(.dark) {
+  --theme-primary-foreground: oklch(0.21 0.03 150) !important; /* 深绿色 */
+}
+
+
+
