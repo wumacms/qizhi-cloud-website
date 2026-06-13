@@ -148,7 +148,7 @@ export interface QiZhiData {
  * 开发环境下模拟 500ms 网络延迟，生产环境零延迟。
  */
 export async function getQiZhiData(): Promise<QiZhiData> {
-  const response = await fetch('/api/page-data.json')
+  const response = await fetch(`${import.meta.env.BASE_URL}api/page-data.json`)
   if (!response.ok) {
     throw new Error('获取落地页数据失败，请稍后重试！')
   }
