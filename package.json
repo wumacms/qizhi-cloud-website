@@ -12,7 +12,7 @@
     "@iconify/vue": "^5.0.1",
     "@tailwindcss/vite": "^4.3.0",
     "@vueuse/core": "^14.3.0",
-    "@zeldafox/vue-tailwind-theme-kit": "file:/Users/devlink/code/github/wumacms/vue-tailwind-theme-kit",
+    "@zeldafox/vue-tailwind-theme-kit": "^1.1.1",
     "tailwindcss": "^4.3.0",
     "vue": "^3.5.34",
     "vue-router": "^5.1.0"

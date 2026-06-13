@@ -18,8 +18,8 @@ importers:
         specifier: ^14.3.0
         version: 14.3.0(vue@3.5.35(typescript@6.0.3))
       '@zeldafox/vue-tailwind-theme-kit':
-        specifier: file:/Users/devlink/code/github/wumacms/vue-tailwind-theme-kit
-        version: file:../../github/wumacms/vue-tailwind-theme-kit(vue@3.5.35(typescript@6.0.3))
+        specifier: ^1.1.1
+        version: 1.1.1(vue@3.5.35(typescript@6.0.3))
       tailwindcss:
         specifier: ^4.3.0
         version: 4.3.0
@@ -425,8 +425,8 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  '@zeldafox/vue-tailwind-theme-kit@file:../../github/wumacms/vue-tailwind-theme-kit':
-    resolution: {directory: ../../github/wumacms/vue-tailwind-theme-kit, type: directory}
+  '@zeldafox/vue-tailwind-theme-kit@1.1.1':
+    resolution: {integrity: sha512-3phYjPV9m86Hx/ZzM+7IZgc3fiyAsbJD+y5lTpAlCYu16jt0DdJMAvtFRTUIqJ0tN+X3t4FaQ/HOppRq9qaaMQ==}
     peerDependencies:
       vue: ^3.0.0
 
@@ -1117,7 +1117,7 @@ snapshots:
     dependencies:
       vue: 3.5.35(typescript@6.0.3)
 
-  '@zeldafox/vue-tailwind-theme-kit@file:../../github/wumacms/vue-tailwind-theme-kit(vue@3.5.35(typescript@6.0.3))':
+  '@zeldafox/vue-tailwind-theme-kit@1.1.1(vue@3.5.35(typescript@6.0.3))':
     dependencies:
       vue: 3.5.35(typescript@6.0.3)
 
